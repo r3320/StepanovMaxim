@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/sigma.min.js"></script>
+    <script src="js/math.min.js"></script>
+    <script src="js/plugins/sigma.parsers.json.min.js"></script>
+    <script src="js/ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js"></script>
+	  <title>WOHOO</title>
+  </head>
+  <body class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="task-choise">
+          <li><a href="1.html">1</a></li>
+          <li><a href="2.html">2</a></li>
+          <li class="current"><a href="3.html">3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="info">
+        <div class="theory">
+          <div class="info-name">
+            Теория
+          </div>
+          <div class="main-text">
+			<p>Матрицей инцидентности (инциденций) ориентированного графа называется матрица I (|V| \times |E|), для которой I_{i,j} = 1, если вершина v_i является началом дуги e_j, I_{i,j} = -1, если v_i является концом дуги e_j, в остальных случаях I_{i,j} = 0.
+			</p>
+      <p>
+      Матрицей инцидентности (инциденций) неориентированного графа называется матрица I (|V| \times |E|), для которой I_{i,j} = 1, если вершина v_i инцидентна ребру e_j, в противном случае I_{i,j} = 0.
+     </p>
+		  </div>
+        </div>
+        <div class="tasks">
+          <div class="info-name">
+            Задания
+          </div>
+          <div class="main-text">
+              <p>Для предоставленного неориентированного графа построить:</p>
+              <ol>
+                <li>Матрицу инцидентности</li>
+              </ol>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal">
+        <div id="work-area" class="work-area">
+          <div id="graphRight" class="half-page graph"></div>
+          <div id="graphStudent" class="half-page graph"></div>
+        </div>
+        <div class="others">
+          <div id="studentAnswer" class="studentAnswer">
+          </div>
+          <div class="controls">
+            <ul class="main-buttons">
+              <li><a href="2.html" class="button">Назад</a></li>
+			        <li><a href="#" id="vizualizeIt" class="button">Отрисовать</a></li>
+              <li><a href="#" id="checkIt" class="button">Проверить</a></li>
+              <li><a href="#" class="button">Вперёд</a></li>
+            </ul>
+            <div class="svg">
+              <svg class="svg" viewBox="0 0 24 24">
+                <path id="wrongAnswer" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+              </svg>
+              <svg class="svg" viewBox="0 0 24 24">
+                <path id="rightAnswer" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+body {
+	width: 1366px;
+	min-width: 1366px;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1366px;
+	margin: 0 auto;
+	box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+
+.main-header {
+	padding: 0 0;
+	min-height: 56px;
+}
+
+.current {
+	background-color: green;
+}
+
+.main-navigation {
+	display: block;
+	width: 100%;
+	min-height: 56px;
+	background-color: #152B39;
+}
+
+.task-choise {
+	width: auto;
+	min-height: 0;
+	margin: 0 auto;
+	padding-left: 0;
+	list-style: none;
+}
+
+.task-choise li {
+	display: inline-block;
+	text-align: center;
+	float: left;
+	width: 50px;
+	padding-top: 19px;
+	padding-bottom: 17px;
+	margin: 0 10px;
+}
+
+.task-choise li:nth-child(1){
+	margin-left: 20px;
+}
+
+.task-choise a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.main-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.horizontal {
+	width: 1051.83px;
+}
+
+.work-area {
+	width: 100%;
+	height: 295.5px;
+	box-sizing: content-box;
+}
+
+.others {
+	width: 100%;
+	height: 295.5px;
+}
+
+.info {
+	width: 23%;
+	height: 591px;
+}
+
+.info .theory, .tasks {
+	width: 100%;
+	height: 295.5px;
+}
+
+.info-name {
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	min-height: 20px;
+	color: white;
+	background-color: #546E7A;
+	box-sizing: content-box;
+}
+
+.main-text {
+  width: 100%;
+	height: 255.5px;
+  padding: 0 10px;
+  overflow-y: scroll;
+	background-color: white;
+	color: black;
+	box-sizing: border-box;
+}
+
+.main-text::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.main-text::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.others {
+	background-color: #152B39;
+}
+
+.controls {
+	float: left;
+	width: 50%;
+	height: 295.5px;
+}
+
+.main-buttons {
+  list-style: none;
+  display: flex;
+	padding: 0 0;
+	margin: 0 0;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.button{
+  text-decoration:none;
+  text-align:center;
+  padding:11px 25px;
+  border:solid 1px #08c;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius: 4px;
+  font:14px Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color:#ffffff;
+  background-color:#08c;
+  background-image: -moz-linear-gradient(top, #08c 0% ,#08c 100%);
+  background-image: -webkit-linear-gradient(top, #08c 0% ,#08c 100%);
+  background-image: -o-linear-gradient(top, #08c 0% ,#08c 100%);
+  background-image: -ms-linear-gradient(top, #08c 0% ,#08c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08c', endColorstr='#08c',GradientType=0 );
+  background-image: linear-gradient(top, #08c 0% ,#08c 100%);
+  -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;
+  box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.main-buttons li:nth-child(2){
+	margin: 0px 5px;
+}
+
+.main-buttons li:nth-child(3){
+	margin: 0px 5px;
+}
+
+.svg{
+	display: flex;
+	padding-top: 20px;
+	justify-content: center;
+}
+
+svg {
+	width: 100px;
+	height: 100px;
+}
+
+.main-footer {
+	width: 100%;
+	padding: 0;
+	height: 20px;
+	background-color: #152B39;
+}
+
+.half-page, .studentAnswer, .controls {
+	float: left;
+	width: 50%;
+	height: 295.5px;
+	box-sizing: content-box;
+}
+
+.half-page {
+	width: 49.5%;
+		background: white;
+}
+
+.half-page:nth-child(1){
+	border-right: 10px solid #152B39;
+}
+
+.studentAnswer, .controls {
+	background-color: #152B39;
+}
+
+.asd {
+	width: 200px;
+	heigth: 200px;
+}
+.studentAnswer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+  width: 100px;
+  margin: 4em auto 0;
+}
+
+.checkmark {
+  stroke: green;
+  stroke-dashoffset: 745.74853515625;
+  stroke-dasharray: 745.74853515625;
+  animation: dash 2s ease-out forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 745.74853515625;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
